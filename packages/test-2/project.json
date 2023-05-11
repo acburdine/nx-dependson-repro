@@ -1,0 +1,20 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "test-2",
+  "sourceRoot": "packages/test-2",
+  "projectType": "library",
+  "targets": {
+    "core": {
+      "command": "echo 'core target of test-2 project'"
+    },
+    "core-2": {
+      "command": "echo 'core-2 target of test-2 project'"
+    },
+    "build": {
+      "command": "echo 'build target of test-2 project'",
+      "dependsOn": [{ "target": "core" }, "core-2"]
+    }
+  }
+}
+
+

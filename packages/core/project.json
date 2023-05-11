@@ -1,0 +1,11 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "core",
+  "sourceRoot": "packages/core",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "command": "echo 'build target of core project'"
+    }
+  }
+}
